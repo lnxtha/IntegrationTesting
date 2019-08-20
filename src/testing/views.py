@@ -15,3 +15,10 @@ class Homepage(View):
         return render(request, template_name, {})
 
 
+class Login(View):
+    def get(self, request):
+        template_name = 'login.html'
+        return render(request, template_name, {})
+
+
+

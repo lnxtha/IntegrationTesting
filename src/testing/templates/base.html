@@ -102,23 +102,54 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+          <span>Execute</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <h6 class="dropdown-header">Login Screens:</h6>
-          <a class="dropdown-item" href="login.html">Login</a>
-          <a class="dropdown-item" href="register.html">Register</a>
-          <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
-          <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="404.html">404 Page</a>
-          <a class="dropdown-item" href="blank.html">Blank Page</a>
+          <h6 class="dropdown-header">Execute:</h6>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#schemamodal">Integration Testing</a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'visualization:login' %}">Login</a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="register.html">Test2</a>
+
+          <a class="dropdown-item" href="forgot-password.html">Test3</a>
+
+{#          <div class="dropdown-divider"></div>#}
+{#          <h6 class="dropdown-header">Divider Header</h6>#}
+          <a class="dropdown-item" href="404.html">Test4</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="404.html">Test5</a>
+          <a class="dropdown-item" href="blank.html">Test6</a>
+            <a class="dropdown-item" href="blank.html">Test7</a>
+            <a class="dropdown-item" href="blank.html">Test8</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="blank.html">Test9</a>
+            <a class="dropdown-item" href="blank.html">Test10</a>
+            <div class="dropdown-divider"></div>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Results</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <h6 class="dropdown-header">Results</h6>
+          <a class="dropdown-item" href="{% url 'visualization:login' %}">Login</a>
+          <a class="dropdown-item" href="register.html">Result 1</a>
+          <a class="dropdown-item" href="forgot-password.html">Result 2</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Result 3</h6>
+          <a class="dropdown-item" href="404.html">Result 4</a>
+          <a class="dropdown-item" href="blank.html">Result 5</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="blank.html">Result 6</a>
+            <a class="dropdown-item" href="blank.html">Result 7</a>
+            <a class="dropdown-item" href="blank.html">Result 8</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="blank.html">Result 9</a>
+            <a class="dropdown-item" href="blank.html">Result 10</a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
@@ -150,6 +181,8 @@
   <!-- Demo scripts for this page-->
   <script src="{% static 'js/demo/datatables-demo.js' %}"></script>
   <script src="{% static 'js/demo/chart-area-demo.js' %}"></script>
+
+  </div>
 
 </body>
 
